@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html><html><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-lightness.css" />
+        <link rel="stylesheet" type="text/css" href="css/mainCSS.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        
+    	<!-- InstanceBeginEditable name="doctitle" -->
+    	    <title>Recycling Kiosk - Play Area</title>
+        <!-- InstanceEndEditable -->
+        
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/phonegap.js"></script>
+		<script type="text/javascript" src="js/MainJS.js"></script> 
+        <script type="text/javascript" src="js/DAL.js"></script>
+        <script type="text/javascript" src="js/PhonegapJqueryStart.js"></script>
+    </head>
+    <body onLoad="onLoad()">
+    	<div id="divGrayBG" class="divBasicHiddlenBackground"></div>
+        <div id="divLoadingGrayBG" class="divBasicHiddlenBackground"></div>
+                
+        <!-- InstanceBeginEditable name="head" -->        
+        <script type="text/javascript" src="js/jquery.mobiledragdrop.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+        <!-- InstanceEndEditable -->
+        
+        <!-- InstanceBeginEditable name="BasicBody" -->
+         <div id="divCommentGrayBG" class="divBasicHiddlenBackground"></div>
+        
+		<img alt="Game Level" src="img/BGLevelOffice@2x.png" id="imgGameBG" />
+        
+        <div class='divBasicHidden' id='divDidYouKnow'>
+        	<div id="divDidYouKnowClose" class="divGameAreaResultsClose">
+            	<a href="javascript:void(0);" onClick="javascript:toggleLayer('divDidYouKnow','','');"><img id="imgResultsClose" alt="Close" src="img/ButtonCloseOff@2x.png"></a>
+			</div>
+            <div class="divHiddlenBody" id="divDidYouKnowBody">
+            	<div class="divDidYouKnowTitle">
+                	<img id="imgDidYouKnow" alt="Did You Know?" />
+                </div>
+                <div id="divDidYouKnowInnerBody">
+                	<label id="lblDidYouKnowInner"></label>
+                </div>
+            </div>
+        </div>
+        
+        <div class='divBasicHidden' id='divLoadingScreen'>
+            <div class="divHiddlenBody divLoadingScreenBody">
+                <div class="divGameAreaPlayNowTitle">
+                    <label class="lblAvenirLTStdHeavy lblGameIntroTitle" id="lblLoadingStage"></label>
+                </div>
+            </div>
+        </div>
+        
+        <div class='divBasicHidden' id='divResultsLoadingScreen'>
+            <div class="divHiddlenBody divLoadingScreenBody">
+                <div class="divGameAreaPlayNowTitle">
+                    <label class="lblAvenirLTStdHeavy lblGameIntroTitle" id="lblGettingResults"></label>
+                </div>
+            </div>
+        </div>
+        
+        <div class='divBasicHidden' id='divPlayNow'>
+            <div class="divHiddlenBody" id="divGameAreaPlayNowBody">
+                <div class="customContainer" id="divGameAreaPlayNowContainer">
+                	<div class="customHeader" id="divGameAreaPlayNowHeader">
+                    	<div class="divGameAreaPlayNowTitle">
+	    		        	<label class="lblAvenirLTStdHeavy lblGameIntroTitle" id="lblGameInstaurationsTitle"></label>
+						</div>
+                    	<label id="lblGameInstaurationsIntro"></label>
+                    </div>
+                    <div class="customLeft" id="divGameAreaPlayNowLeft">
+                    	<div class="divGameAreaPlayNowRecyclingIcon">
+                        	<img alt="Garbage" src="img/RecyclingGarbage@2x.png" />
+                        </div>
+                        <div class="divGameAreaPlayNowRecyclingTitle">
+	                        <label id="lblGIGarbage"></label>
+                        </div>
+                        <div class="divGameAreaPlayNowRecyclingText">
+                        	<label id="lblGIGarbageExample"></label>
+                        </div>
+                    </div>
+                    <div class="customMiddle" id="divGameAreaPlayNowMiddle">
+                    	<div class="divGameAreaPlayNowRecyclingIcon">
+                        	<img alt="Recyclables" src="img/RecyclingRecyclables@2x.png" />
+                        </div>
+                        <div class="divGameAreaPlayNowRecyclingTitle">
+                        	<label id="lblGIRecyclables"></label>
+                        </div>
+                        <div class="divGameAreaPlayNowRecyclingText">
+                        	<label id="lblGIRecyclablesExample"></label>
+                        </div>
+                    </div>
+                    <div class="customRight" id="divGameAreaPlayNowRight">
+                    	<div class="divGameAreaPlayNowRecyclingIcon">
+                        	<img alt="Organics" src="img/RecyclingOrganics@2x.png" />
+                        </div>
+                        <div class="divGameAreaPlayNowRecyclingTitle">
+                        	<label id="lblGIOrganics"></label>
+                        </div>
+                        <div class="divGameAreaPlayNowRecyclingText">
+                        	<label id="lblGIOrganicsExample"></label>
+                        </div>
+                    </div>
+                    <div class="customFooter" id="divGameAreaPlayNowFooter">
+                    	 <a href="javascript:void(0);" onClick="javascript:toggleLayer('divPlayNow','divGrayBG','');"><img id="imgPlayNow" alt="Play Now" onMouseOver="changeImage('imgPlayNow','img/ButtonPlayOn@2x.png');" onMouseOut="changeImage('imgPlayNow','img/ButtonPlayOff@2x.png');"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class='divBasicHidden' id='divGameResults'>
+        	<div class="divGameAreaResultsClose">
+            	<a href="SignUp.html"><img id="imgResultsClose" alt="Close" src="img/ButtonCloseOff@2x.png" onMouseOver="changeImage('imgResultsClose','img/ButtonCloseOn@2x.png');" onMouseOut="changeImage('imgResultsClose','img/ButtonCloseOff@2x.png');"></a>
+			</div>
+            <div class="divHiddlenBody" id="divGameResultsBody">
+                <div class="customContainer" id="divGameAreaResultsContainer">
+                	<div class="customHeader" id="divGameAreaResultsHeader">
+                    	<div class="divGameAreaPlayNowTitle">
+	    		        	<label class="lblAvenirLTStdHeavy lblGameIntroTitle" id="lblGameResultsTitle"></label>
+						</div>
+                        <div id="divGameAreaResultsScoreContainer" class="customContainer">
+                        	<div id="divGameAreaResultsScoreLeft" class="customLeft">
+                       		  <label class="lblAvenirLTStdHeavy lblGameAreaResultScore" id="lblGameAreaResultScore"></label> <span id="spanGameResultsScore" class="lblAvenirLTStdHeavy lblGameAreaResultScore">0</span>
+                            </div>
+							<div id="divGameAreaResultsScoreRight" class="customRight">
+                           		<img alt="Star Rate: " id="imgGameAreaResultStarRate" src="img/StarRate1@2x.png" />
+                          	</div>
+                          	<div id="divGameAreaResultsScoreFooter" class="customFooter"></div>
+                        </div>
+                        
+                    	<label class="lblAvenirLTStdRoman" id="lblGameResultsIntroText"></label>
+                        <br /><br />
+                        <a class="aBrightIdea" href="javascript:void(0);" onClick="toggleLayer('divGameComments','divCommentGrayBG','');" id="aGameResultsSubmitIdea"></a>
+                    </div>
+                    <div id="divGameAreaWrongAwnserBodyContent">
+                        <div class="customLeft" id="divGameAreaResultsLeft">
+                            <img alt="Item" id="imgGameResultsItem" />
+                        </div>
+                        <div class="customMiddle" id="divGameAreaResultsMiddle">
+                            <img alt="You Said" id="imgGameResultsYouSaid" />
+                        </div>
+                        <div class="customRight" id="divGameAreaResultsRight">
+                            <img alt="Current Answer" id="imgGameResultsCurrentAnswer" />
+                        </div>
+                        <div class="customFooter" id="divGameAreaResultsFooter"></div>
+                        <div class="customContainer" id="divGameAreaWrongAwnserBodyContainer">
+                            <div id="divGameAreaWrongAwnserBody"></div>
+                        </div>
+					</div>
+                    <div id="divGameResultsFooter">
+	                    <label class="lblAvenirLTStdRoman" id="lblGameResultsFooter"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='divBasicHidden' id='divGameComments'>
+        	<div class="divGameAreaResultsClose">
+            	<a href="javascript:void(0);" onClick="toggleLayer('divGameComments','divCommentGrayBG','');"><img id="imgResultsClose" alt="Close" src="img/ButtonCloseOff@2x.png" onMouseOver="changeImage('imgResultsClose','img/ButtonCloseOn@2x.png');" onMouseOut="changeImage('imgResultsClose','img/ButtonCloseOff@2x.png');"></a>
+			</div>
+            <div class="divHiddlenBody" id="divGameCommentsBody">
+            	<div id="divGameCommentsInnerBody">
+                	<div class="divGameAreaPlayNowTitle">
+                        <label class="lblAvenirLTStdHeavy lblGameIntroTitle" id="lblGameCommentsTitle"></label>
+                    </div>
+                
+                	<div id="divGameCommentsThankYou" class="divJustHidden">
+                    	<label class="lblAvenirLTStdHeavy lblGameIntroTitle" id="lblGameCommentsSubTitle"></label>
+                    </div>
+                	<div id="divGameCommentsShareIdeas">
+                        <div id="divGameCommentsTextBox">
+                            <label class="lblAvenirLTStdRoman" id="lblGameCommentsBody1"></label>
+							<br/><br/>
+							<label id="lblGameCommentsBody2"></label>
+                            <br/><br/>
+                            <textarea id="txtGameComments"></textarea>
+
+                            <div id="divGameCommentsMessage" class="divBasicMessage"></div>
+                        </div>
+                        <div id="divGameCommentsFooter">
+                            <a href="javascript:void(0);" onClick="sendGameComment('divGameCommentsMessage', getDocID('txtGameComments'), getDocID('divGameCommentsShareIdeas'), getDocID('divGameCommentsThankYou'));" class="aBlueButton" id="aAddComment"></a>
+                        </div>
+					</div>
+				</div>
+            </div>
+        </div>
+        
+        <div id="divGameBody">
+            <div class='divBasicHidden' id='divGameAwnser' onClick="closeGameAnwser();">
+                <div class="divDidYouKnowTitle">
+                    <img id="imgGameAwnser" />
+                </div>
+                <div class="divHiddlenBody" id="divGameAwnserBody">
+                     <label id="lblGameAwnser"></label>
+                </div>
+                <div class="divTriangleBottom"></div>
+            </div>
+            
+			<div class='divBasicHidden' id='divGameNextStage'>
+            	<div id="divGameNextStageInnerBody">
+                	<a href="javascript:void(0);" onClick='javascript:resetGame(getDocID("lblGameStage"),getDocID("lblGameScore"),getDocID("spanGameResultsScore"),getDocID("lblGameResultsIntroText"),getDocID("imgGameAreaResultStarRate"),getDocID("imgGameBG"),getDocID("lblDidYouKnowInner"),getDocID("divGameAreaWrongAwnserBodyContent"),"divLoadingScreen","divGameNextStage");'><span class="lblAvenirLTStdHeavy" id="spanGameNextStage"></span></a>
+                </div>
+            </div>
+            
+			<div id="divGameAreaContainer" class="customContainer">
+                <div id="divGameAreaHeader" class="customHeader">
+                	<img alt="" id="imgGameItem1" class="drag divJustHidden" />
+                    <img alt="" id="imgGameItem2" class="drag divJustHidden" />
+                    <img alt="" id="imgGameItem3" class="drag divJustHidden" />
+                    <img alt="" id="imgGameItem4" class="drag divJustHidden" />
+                    <img alt="" id="imgGameItem5" class="drag divJustHidden" />
+                </div>
+                <div id="divGameAreaLeft" class="customLeft">
+	               	<div class="divGameAreaScoreContainer customContainer lblAvenirLTStdHeavy">
+                        <div class="divGameAreaScoreLeft customLeft">
+                        	<div class="divGameScoreTitle">
+                            	<label id="lblGameScoreTitle"></label>
+                            </div>
+                            <div class="divGameScore">
+                            	<label id="lblGameScore">0</label>
+                            </div>
+                        </div>
+						<div class="divGameAreaScoreRight customRight" id="divGameAreaStageProgress">
+                          	<div class="divGameScoreTitle">
+                            	<label id="lblGameScoreStageTitle"></label>
+                            </div>
+                            <div class="divGameScore divGameAreaScoreStagingLeft customLeft">
+                            	<label id="lblGameStage">1</label><label>/3</label>
+                            </div>
+                            <div class="divGameAreaScoreStagingRight customRight divJustHidden divGameItemScoreActive" id="divGameItemScore4">
+	                          	<img id="imgGameItemScore4" alt="mark" class="divJustHidden" />&nbsp;
+                            </div>
+                            <div class="divGameAreaScoreStagingRight customRight divJustHidden" id="divGameItemScore3">
+                                <img id="imgGameItemScore3" alt="mark" class="divJustHidden" />&nbsp;
+                            </div>
+                            <div class="divGameAreaScoreStagingRight customRight divJustHidden" id="divGameItemScore2">
+                                <img id="imgGameItemScore2" alt="mark" class="divJustHidden" />&nbsp;
+                            </div>
+                            <div class="divGameAreaScoreStagingRight customRight divJustHidden" id="divGameItemScore1">
+                                <img id="imgGameItemScore1" alt="mark" class="divJustHidden" />&nbsp;
+                            </div>
+                            <div class="divGameAreaScoreStagingRight customRight divJustHidden" id="divGameItemScore0">
+                                <img id="imgGameItemScore0" alt="mark" class="divJustHidden" />&nbsp;
+                            </div>
+                            <div class="divGameAreaScoreStagingFooter customFooter"></div>
+						</div>
+						<div class="divGameAreaScoreFooter customFooter"></div>
+					</div>
+                </div>
+                <div id="divGameAreaRight" class="customRight divGameAreaRight">
+                	<div class="customContainer divGameAreaBinContainer">                    
+                        <div class="customLeft divGameAreaBinLeft drop" id="2">
+                        	&nbsp;
+                        </div>
+                        <div class="customLeft divGameAreaBinLeft drop" id="1">
+                        	&nbsp;
+                        </div>
+                        <div class="customLeft divGameAreaBinLeft drop" id="3">
+                        	&nbsp;
+                        </div>
+                        <div class="customRight divGameAreaBinRight drop" id="4">
+                        	&nbsp;
+                        </div>
+                        <div class="customFooter divGameAreaBinFooter"></div>
+                    </div>
+                </div>
+                <div id="divGameAreaFooter" class="customFooter"></div>
+            </div>
+        </div>
+		<!-- InstanceEndEditable --> 
+		
+		<!-- InstanceBeginEditable name="BasicFooter" -->
+			<script type="text/javascript">
+				/*function onLoad() 
+				{
+					console.log("On Page Load");
+				
+					//starts both the Phonegap and JQuery Frameworks
+                    app.initialize(function() {*/
+					$(document).ready(function () {
+						console.log("Game Area Loading");				
+										
+						console.log("Game Area Loading - Install Scrolling");
+										
+						//sets the scrolling for the wrong awnser body
+						$("#divGameAreaWrongAwnserBody").niceScroll();
+						
+						console.log("Game Area Loading - Add Drag and Drop");
+						
+						$(".drag").draggable({
+							drag: function(event, ui)
+							{
+								//checks if the game anwser is on if so then turn off anwser lightbox and timer
+								if(getDocID("divGameAwnser").style.display == 'block')
+								{
+									//close the anwser lightbox
+									closeGameAnwser();
+									clearInterval(timerAnwser);
+								}//end of if
+							}
+						});
+						$(".drop").droppable({
+							drop: function(event, ui)
+							{
+								//logs the users anwsers in the database, and set results of any wrong anwsers into the system
+								sendLogPlayGame(getDocID($(this).attr('id')),getDocID($(ui.draggable[0]).attr('id')),getDocID("divGameAreaWrongAwnserBody"),getDocID("divGameItemScore" + (parseInt(classToggleLayerCounting(getDocID("divGameAreaHeader"),"drag ui-draggable","img")) - 1)),getDocID("imgGameItemScore" + classToggleLayerCounting(getDocID("divGameAreaHeader"),"drag ui-draggable","img")),getDocID("lblGameScore"),getDocID("imgGameAwnser"),getDocID("lblGameAwnser"),getDocID("divGameAwnser"),"divResultsLoadingScreen","divGameNextStage");
+							}
+						});
+						
+						console.log("Game Area Loading - Install Database");
+						
+						//creates the local database if there is no database on the device if there is one 
+						//then is will just open it 
+						startDB("RKDB", "Recycling Kiosk", 4);
+					});
+					
+					/*console.log("Device is Ready");
+				}//end of onLoad()*/
+            </script>
+        <!-- InstanceEndEditable -->
+    </body>
+<!-- InstanceEnd --></html>
+
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->

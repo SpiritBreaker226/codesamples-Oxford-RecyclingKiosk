@@ -1,0 +1,192 @@
+<!DOCTYPE html><html><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-lightness.css" />
+        <link rel="stylesheet" type="text/css" href="css/mainCSS.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <title>Recycling Kiosk - Sign Up For The Game</title>
+        
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/phonegap.js"></script>
+		<script type="text/javascript" src="js/MainJS.js"></script> 
+        <script type="text/javascript" src="js/DAL.js"></script>
+        <script type="text/javascript" src="js/PhonegapJqueryStart.js"></script>
+    </head>
+    <body onLoad="onLoad()">
+    	<div id="divGrayBG" class="divBasicHiddlenBackground"></div>
+        <div id="divLoadingGrayBG" class="divBasicHiddlenBackground"></div>
+
+        <div class='divBasicHidden' id='divLoadingScreen'>
+            <div class="divHiddlenBody divLoadingScreenBody">
+                <div class="divGameAreaPlayNowTitle">
+                    <label class="lblAvenirLTStdHeavy lblGameIntroTitle" id="lblGameIntroTitle"></label>
+                </div>
+            </div>
+        </div>
+        
+        <div class='divBasicHidden' id='divTermsPrivacy'>
+            <div class="customContainer divLightboxTitleContainer">
+                <div class="customLeft divLightboxTitleLeft">
+                    <label class="lblAvenirLTStdHeavy" id="lblTermsPrivacyTitle"></label>
+                </div>
+                <div class="customRight divLightboxTitleRight">
+	                <a href="javascript:void(0);" onClick="javascript:toggleLayer('divTermsPrivacy','divGrayBG','');"><img id="imgDone" alt="Done"  /></a>
+                </div>
+                <div class="customFooter divLightboxTitleFooter"></div>
+            </div>
+            <div class="divHiddlenBody" id="divTermsPrivacyBody">
+                <label class="lblAvenirLTStdHeavy" id="lblTermsPrivacySubTitle"></label>
+                <br />
+				<label id="lblTermsBody"></label>
+				<br /><br />
+				<label id="lblPrivacy" class="lblAvenirLTStdHeavy"></label>
+				<br />
+				<label id="lblPrivacyBody1"></label>
+				<br /><br />
+				<label id="lblPrivacyBody2"></label>
+            </div>
+        </div>
+                
+		<div id="divSignUpBody" class="divSignUpBody">
+        	<div id="divTrashIcons">
+        		<img alt="Trash" src="img/TrashIcons@2x.png" />
+            </div>
+            <div id="divSignUpForumContainer" class="customContainer">
+            	<div id="divSignUpForumLeft" class="customLeft">
+                	<div id="divNameOfGame">
+                    	<label id="lblNameOfGame"></label>
+                    </div>
+                    <div id="divRecyclingIcons">
+                    	<img id="imgRecyclingIcons" alt="Recycling Icons" src="img/RecyclingIcons@2x.png" />
+                    </div>
+                </div>
+                <div id="divSignUpForumRight" class="customRight">
+                	<label id="lblSignUpIntroText" class="lblSignUpIntroText"></label>
+                    <div id="divSignUpForumBodyContent">
+                        <div id="divSignUpForumTextContainer" class="customContainer">
+                            <div id="divSignUpForumTextLeft" class="customLeft">
+                                <div class="divSignUpForumTextClearContainer customContainer">
+                                    <div class="divSignUpForumTextClearLeft customLeft">
+                                        <input id="txtFirstName" type="text" onKeyPress="clearText('txtFirstName','aFirstNameClear','imgFirstNameError', false);" onChange="clearText('txtFirstName','aFirstNameClear','imgFirstNameError', false);" />
+                                    </div>
+                                    <div class="divSignUpForumTextClearRight customRight">
+                                        <a href="javascript:void(0);" id="aFirstNameClear" class="divJustHidden" onClick="clearText('txtFirstName','aFirstNameClear','imgFirstNameError', true);"><img alt="Clear" src="img/ButtonClear@2x.png" /></a>
+                                        <img alt="Error" src="img/ErrorMark@2x.png" class="divJustHidden" id="imgFirstNameError" />
+                                        &nbsp;
+                                    </div>
+                                    <div class="divSignUpForumTextClearFooter customFooter"></div>
+                                </div>
+                            </div>
+                            <div id="divSignUpForumTextRight" class="customRight">
+                                <div class="divSignUpForumTextClearContainer customContainer">
+                                    <div class="divSignUpForumTextClearLeft customLeft">
+                                        <input id="txtLastName" type="text" onKeyPress="clearText('txtLastName','aLastNameClear','imgLastNameError', false);" onChange="clearText('txtLastName','aLastNameClear','imgLastNameError', false);" />
+                                    </div>
+                                    <div class="divSignUpForumTextClearRight customRight">
+                                        <a href="javascript:void(0);" id="aLastNameClear" class="divJustHidden" onClick="clearText('txtLastName','aLastNameClear','imgLastNameError', true);"><img alt="Clear" src="img/ButtonClear@2x.png" /></a>
+                                        <img alt="Error" src="img/ErrorMark@2x.png" class="divJustHidden" id="imgLastNameError" />
+                                        &nbsp;
+                                    </div>
+                                    <div class="divSignUpForumTextClearFooter customFooter"></div>
+                                </div>
+                            </div>
+                            <div id="divSignUpForumTextFooter" class="customFooter">
+                                <div id="divForumOrg">
+                                    <div class="divSignUpForumTextClearContainer customContainer">
+                                        <div class="divSignUpForumTextClearLeft divSignUpForumTextClearLongLeft customLeft">
+                                            <input id="txtOrg" type="text" onKeyPress="clearText('txtOrg','aOrgClear','imgOrgError', false);" onChange="clearText('txtOrg','aOrgClear','imgOrgError', false);" />
+                                        </div>
+                                        <div class="divSignUpForumTextClearRight customRight">
+                                            <a href="javascript:void(0);" id="aOrgClear" class="divJustHidden" onClick="clearText('txtOrg','aOrgClear','imgOrgError', true);"><img alt="Clear" src="img/ButtonClear@2x.png" /></a>
+                                            <img alt="Error" src="img/ErrorMark@2x.png" class="divJustHidden" id="imgOrgError" />
+                                            &nbsp;
+                                        </div>
+                                        <div class="divSignUpForumTextClearFooter customFooter"></div>
+                                    </div>
+                                </div>
+                                <div id="divForumEmail">
+                                    <div class="divSignUpForumTextClearContainer customContainer">
+                                        <div class="divSignUpForumTextClearLeft divSignUpForumTextClearLongLeft customLeft">
+                                            <input id="txtEmail" type="email" onKeyPress="clearText('txtEmail','aEmailClear','imgEmailError', false);" onChange="clearText('txtEmail','aEmailClear','imgEmailError', false);" />
+                                        </div>
+                                        <div class="divSignUpForumTextClearRight customRight">
+                                            <a href="javascript:void(0);" id="aEmailClear" class="divJustHidden" onClick="clearText('txtEmail','aEmailClear','imgEmailError', true);"><img alt="Clear" src="img/ButtonClear@2x.png" /></a>
+                                            <img alt="Error" src="img/ErrorMark@2x.png" class="divJustHidden" id="imgEmailError" />
+                                            &nbsp;
+                                        </div>
+                                        <div class="divSignUpForumTextClearFooter customFooter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="divSignUpForumCheckboxContainer" class="customContainer">
+                            <div id="divSignUpForumCheckboxLeft" class="customLeft">
+                                <img id="imgKeepMe" alt="1" src="img/Checkmark@2x.png" onClick="changeCheckbox('imgKeepMe');" />
+                            </div>
+                            <div id="divSignUpForumCheckboxRight" class="customRight">
+                                <label id="lblKeepMe"></label>
+                            </div>
+                            <div id="divSignUpForumCheckboxFooter" class="customFooter"></div>
+                        </div>
+					</div>
+                    <div id="divSignUpForumFooterContainer" class="customContainer">
+                        <div id="divSignUpForumFooterLeft" class="customLeft">
+                            <label id="lblPlayingGameAgree"></label> <a href="javascript:void(0);" onClick="toggleLayer('divTermsPrivacy','divGrayBG','');" id="aTermLightboxSwitch"></a> <label id="lblAndText"></label> <a href="javascript:void(0);" onClick="toggleLayer('divTermsPrivacy','divGrayBG','');" id="aPrivacyLightboxSwitch"></a>
+                        </div>
+                         <div id="divSignUpForumFooterMiddle" class="customMiddle">
+                            <div id="divMessage" class="divBasicMessage"></div>
+                            &nbsp;
+                        </div>
+                        <div id="divSignUpForumFooterRight" class="customRight">
+                        	<a href="javascript:void(0);" onClick="sendRegister('divMessage', getDocID('txtFirstName'), getDocID('txtLastName'), getDocID('txtOrg'), getDocID('txtEmail'), getDocID('imgKeepMe'), getDocID('aFirstNameClear'), getDocID('aLastNameClear'), getDocID('aOrgClear'), getDocID('aEmailClear'), getDocID('imgFirstNameError'), getDocID('imgLastNameError'), getDocID('imgOrgError'), getDocID('imgEmailError'), getDocID('divSignUpForumBodyContent'), getDocID('divSignUpForumFooterRight'),'divLoadingScreen');"><img alt="Start" id="imgStart" /></a>
+                        </div>
+                        <div id="divSignUpForumFooterFooter" class="customFooter"></div>
+					</div>
+                </div>
+                <div id="divSignUpForumFooter" class="customFooter"></div>
+            </div>
+            <div id="divFooterLanguage"></div>
+        </div>
+
+	    <script type="text/javascript">
+            function onLoad() 
+            {
+                console.log("On Page Load");
+
+                //starts both the Phonegap and JQuery Frameworks
+                app.initialize(function() {
+                    //creates the local database if there is no database on the device if there is one 
+                    //then is will just open it 
+                    startDB("RKDB", "Recycling Kiosk", 3);
+                });
+
+                console.log("Device is Ready");
+            }//end of onLoad()
+        </script>
+    </body>
+</html>
+
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->

@@ -1,0 +1,1131 @@
+@font-face {
+    font-family: "AvenirLTStd-Medium";
+    src: url("../fonts/AvenirLTStd-Medium.otf") format("opentype");   
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Heavy";
+    src: url("../fonts/AvenirLTStd-Heavy.otf") format("opentype");   
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Roman";
+    src: url("../fonts/AvenirLTStd-Roman.otf") format("opentype");   
+}
+
+@font-face {
+    font-family: Impact;
+    src: url("../fonts/impact.ttf") format("opentype");   
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #FFFFFF;
+	font-family: "AvenirLTStd-Medium";
+	font-size: 25px;
+	color: #494949;
+	
+	/*
+
+		Preventing scrolling
+
+	*/
+	width: 100%;
+	height: 100%;
+}
+
+a {
+    color: #494949;
+}
+
+a.aBlueButton {
+	color: #FFF;
+	background-color: #487FB1;
+	border-radius: 8px;
+	box-shadow: 1px 1px 10px 0px #000 inset;
+	text-decoration: none;
+	padding: 16px 26px;
+}
+
+.lblFontBold {
+	font-weight: bold;
+}
+
+.lblAvenirLTStdHeavy {
+	font-family: "AvenirLTStd-Heavy";
+}
+
+.lblAvenirLTStdRoman {
+	font-family: "AvenirLTStd-Roman";
+}
+
+/*
+	
+	Tableless Forms
+
+*/
+
+div.customContainer {
+}
+
+div.customHeader {
+} 
+
+div.customFooter {
+	clear: both;
+} 
+
+div.customLeft {
+	float: left;
+} 
+
+div.customMiddle {
+	float: left;
+} 
+
+div.customRight {
+	float: left;
+}
+
+/*
+	
+	Tableless Forms - Sign Up Forum - SignUp.html
+
+*/
+
+div#divSignUpForumContainer {
+	background: no-repeat url('../img/BGWhite@2x.png');
+	position: absolute;
+	z-index: 2;
+	padding: 37px 60px 0;
+	margin-top: 370px;
+	width: 1928px;
+	height: 904px;
+}
+
+div#divSignUpForumFooter {
+}
+
+div#divSignUpForumLeft {
+	margin-right: 147px;
+	width: 774px;
+}
+
+div#divSignUpForumRight {
+	margin-top: 30px;
+	width: 975px;
+}
+
+/*
+	
+	Tableless Forms - Sign Up Forum - Text - SignUp.html
+
+*/
+
+div#divSignUpForumTextContainer {
+	background-color: #FFF;
+	border: 2px solid #b7b9bd;
+	border-radius: 15px;
+	margin-top: 25px;
+	width: 965px;
+}
+
+div#divSignUpForumTextContainer input {
+	border: 0;
+	width: 400px;
+	margin-left: 16px;
+	height: 85px;
+	font-size: 34px;
+}
+
+div#divSignUpForumTextFooter {
+}
+
+div#divSignUpForumTextFooter input {
+	width: 890px;
+}
+
+div#divSignUpForumTextLeft {
+}
+
+div#divSignUpForumTextRight {
+}
+
+/*
+	
+	Tableless Forms - Sign Up Forum - Text - Clear - SignUp.html
+
+*/
+
+div.divSignUpForumTextClearContainer {
+}
+
+div.divSignUpForumTextClearFooter {
+}
+
+div.divSignUpForumTextClearLeft {
+	width: 435px;
+}
+
+div.divSignUpForumTextClearLongLeft {
+	width: 915px;
+}
+
+div.divSignUpForumTextClearRight {
+	height: 42px;
+    padding-top: 27px;
+    width: 42px;
+}
+
+/*
+	
+	Tableless Forms - Sign Up Forum - Checkbox - SignUp.html
+
+*/
+
+div#divSignUpForumCheckboxContainer {
+	margin: 33px 0 0;
+}
+
+div#divSignUpForumCheckboxFooter {
+}
+
+div#divSignUpForumCheckboxLeft {
+	width: 62px;
+}
+
+div#divSignUpForumCheckboxRight {
+	font-size: 34px;
+	padding-top: 10px;
+	margin-left: 32px;
+	width: 871px;
+}
+
+/*
+	
+	Tableless Forms - Sign Up Forum - Footer - SignUp.html
+
+*/
+
+div#divSignUpForumFooterContainer {
+}
+
+div#divSignUpForumFooterFooter {
+}
+
+div#divSignUpForumFooterLeft {
+	width: 492px;
+	padding-top: 39px;
+}
+
+div#divSignUpForumFooterMiddle {
+	width: 223px;
+	padding: 30px 25px 0;
+	text-align: center;
+}
+
+div#divSignUpForumFooterRight {
+	width: 205px;
+}
+
+/*
+	
+	Tableless Forms - Game Area - Game.html
+
+*/
+
+div#divGameAreaContainer {
+}
+
+div#divGameAreaHeader {
+	/*padding-top: 1272px;*/
+}
+
+div#divGameAreaHeader img {
+	position: absolute;
+	z-index: 3;
+}
+
+div#divGameAreaFooter {
+}
+
+div#divGameAreaLeft {
+	background: no-repeat url('../img/BGSliver@2x.png');
+	width: 2022px;
+	height: 294px;
+	margin-top: 1243px;
+	position: absolute;
+    z-index: 1;
+}
+
+.divGameAreaRight {
+	width: 1325px;
+	height: 541px;
+	margin: 996px 0 0 723px;
+	position: relative;
+    z-index: 2;
+}
+
+/*
+
+	Because The Bins need to be a backgournd for now, add in another bin area for any other language that is being used used
+
+ */
+
+div#divGameAreaRightThreeRecycling {
+	background: no-repeat url('../img/BGGarbageRecyclablesOrganicsOther@2x.png');
+}
+
+div#divGameAreaRightThreeRecyclingFR {
+	background: no-repeat url('../img/FR/BGGarbageRecyclablesOrganicsOther-FR@2x.png');
+}
+
+div#divGameAreaRightThreeRecyclingWithOtherRecycling {
+	background: no-repeat url('../img/BGGarbageRecyclablesOrganicsTextOtherRecyclables@2x.png');
+}
+
+div#divGameAreaRightThreeRecyclingWithOtherRecyclingFR {
+	background: no-repeat url('../img/FR/BGGarbageRecyclablesOrganicsTextOtherRecyclablesFR@2x.png');
+}
+
+div#divGameAreaRightTwoRecycling {
+	background: no-repeat url('../img/BGGarbageRecyclablesOther@2x.png');
+}
+
+div#divGameAreaRightTwoRecyclingFR {
+	background: no-repeat url('../img/FR/BGGarbageRecyclablesOther-FR@2x.png');
+}
+
+div#divGameAreaRightTwoRecyclingWithBattery {
+	background: no-repeat url('../img/BGGarbageRecyclablesOtherWithBattery@2x.png');
+}
+
+div#divGameAreaRightTwoRecyclingWithBatteryFR {
+	background: no-repeat url('../img/FR/BGGarbageRecyclablesOrangeOtherWithBatteryFR@2x.png');
+}
+
+div#divGameAreaRightTwoRecyclingWithOtherRecycling {
+	background: no-repeat url('../img/BGGarbageRecyclablesOtherTextOtherRecyclables@2x.png');
+}
+
+div#divGameAreaRightTwoRecyclingWithOtherRecyclingFR {
+	background: no-repeat url('../img/FR/BGGarbageRecyclablesOtherTextOtherRecyclablesFR@2x.png');
+}
+
+div#divGameAreaRightTwoRecyclingWithOrangeOtherRecycling {
+	background: no-repeat url('../img/BGGarbageRecyclablesOrangeOtherTextOtherRecyclables@2x.png');
+}
+
+div#divGameAreaRightTwoRecyclingWithOrangeOtherRecyclingFR {
+	background: no-repeat url('../img/FR/BGGarbageRecyclablesOrangeOtherTextOtherRecyclablesFR@2x.png');
+}
+
+/*
+	
+	Tableless Forms - Game Area - Score - PlayArea.html
+
+*/
+
+div.divGameAreaScoreContainer {
+	padding: 64px 0 71px 80px;
+}
+
+div.divGameAreaScoreFooter {
+}
+
+div.divGameAreaScoreLeft {
+	border-right: 5px groove #cacaca;
+	padding-right: 38px;
+	margin-right: 31px;
+	width: 196px;
+}
+
+div.divGameAreaScoreRight {
+}
+
+/*
+	
+	Tableless Forms - Game Area - Score - Staging/Progress - PlayArea.html
+
+*/
+
+div.divGameAreaScoreStagingFooter {
+}
+
+div.divGameAreaScoreStagingLeft {
+	margin-right: 17px;
+    width: 96px;
+}
+
+div.divGameAreaScoreStagingRight {
+	background-color: #dfdcdc;
+	border-top: 3px groove #434343;
+	border-bottom: 3px groove #cfcfcf;
+	border-right: 3px groove #cfcfcf;
+	border-left: 3px groove #434343;
+	height: 34px;
+    margin: 11px 8px 0 0;
+    padding: 4px;
+    width: 32px;
+}
+
+/*
+	
+	Tableless Forms - Game Area - Bins - PlayArea.html
+
+*/
+
+div.divGameAreaBinContainer {
+	padding-left: 30px;
+	position: relative;
+	z-index: 2;
+}
+
+div.divGameAreaBinFooter {
+}
+
+div.divGameAreaBinLeft {
+	width: 345px;
+	height: 412px;
+	margin-top: 120px;
+}
+
+div.divGameAreaBinLeftTwoRecycling {
+	margin: 120px 0 0 77px;
+    width: 375px;
+}
+
+div.divGameAreaBinRight {
+	width: 245px;
+	height: 535px;
+}
+
+div.divGameAreaBinRightTwoRecycling {
+	margin-left: 10px;
+}
+
+/*
+	
+	Tableless Forms - Game Area - Play Now - PlayArea.html
+
+*/
+
+div#divGameAreaPlayNowContainer {
+	background-color: #e1e1e1;
+	text-align: center;
+	padding: 72px 71px 59px 70px;
+}
+
+div#divGameAreaPlayNowHeader {
+	font-size: 40px;
+	padding: 0 0 66px;
+}
+
+div#divGameAreaPlayNowFooter {
+	border-top: 4px groove #cfcfcf;
+	padding-top: 17px;
+}
+
+div#divGameAreaPlayNowLeft, div#divGameAreaPlayNowLeftTwoRecycling {
+	margin-bottom: 56px;
+	width: 432px;
+}
+
+div#divGameAreaPlayNowLeftTwoRecycling {
+	border-right: 4px groove #cfcfcf;
+	width: 660px;
+}
+
+div#divGameAreaPlayNowLeftTwoRecycling div.divGameAreaPlayNowRecyclingText, div#divGameAreaPlayNowMiddleTwoRecycling div.divGameAreaPlayNowRecyclingText {
+	margin-left: 130px;
+    width: 400px;
+}
+
+div#divGameAreaPlayNowMiddle, div#divGameAreaPlayNowMiddleTwoRecycling {
+	border-left: 4px groove #cfcfcf;
+	border-right: 4px groove #cfcfcf;
+	width: 434px;
+}
+
+div#divGameAreaPlayNowMiddleTwoRecycling {
+	border: 0;
+	width: 648px;
+}
+
+div#divGameAreaPlayNowRight {
+	width: 431px;
+}
+
+/*
+	
+	Tableless Forms - Game Area - Results - PlayArea.html
+
+*/
+
+div#divGameAreaResultsContainer {
+	background-color: #ddd;
+	text-align: center;
+	font-size: 40px;
+	/*padding: 72px 48px 71px 111px;*/
+	padding: 52px 48px 51px 111px;
+}
+
+div#divGameAreaResultsHeader {
+	padding: 0 0 49px;
+}
+
+div#divGameAreaResultsFooter {
+}
+
+div#divGameAreaResultsLeft {
+	border-top: 1px solid #c6c6c6;
+	border-left: 1px solid #c6c6c6;
+	background-color: #ececec;
+}
+
+div#divGameAreaResultsMiddle {
+	border-top: 1px solid #c6c6c6;
+	background-color: #ececec;
+}
+
+div#divGameAreaResultsRight {
+	border-top: 1px solid #c6c6c6;
+	border-right: 1px solid #c6c6c6;
+	background-color: #ececec;
+}
+
+/*
+	
+	Tableless Forms - Game Area - Results - Score - PlayArea.html
+
+*/
+
+div#divGameAreaResultsScoreContainer {
+	margin: 0 0 38px 482px;
+}
+
+div#divGameAreaResultsScoreFooter {
+}
+
+div#divGameAreaResultsScoreLeft {
+}
+
+div#divGameAreaResultsScoreRight {
+	width: 292px;
+	padding-top: 5px;
+	text-align: right;
+}
+
+/*
+	
+	Tableless Forms - Game Area - Results - Wrong Awnser - Body - PlayArea.html
+
+*/
+
+div#divGameAreaWrongAwnserBodyContainer {
+	/*width: 1323px;*/
+	height: 614px;
+	overflow-y: scroll;
+	border-left: 1px solid #c6c6c6;
+	border-right: 1px solid #c6c6c6;
+}
+
+div.divGameAreaWrongAwnserBodyFooter {
+}
+
+div.divGameAreaWrongAwnserBodyLeft {
+	width: 370px;
+	height: 312px;
+	background-color: #ececec;
+	border-bottom: 4px groove #cfcfcf;
+}
+
+div.divGameAreaWrongAwnserBodyMiddle {
+	width: 264px;
+	height: 312px;
+	background-color: #ececec;
+	border-right: 4px groove #cfcfcf;
+	border-left: 4px groove #cfcfcf;
+	border-bottom: 4px groove #cfcfcf;
+}
+
+div.divGameAreaWrongAwnserBodyRight {
+	width: 889px;
+	height: 312px;
+	padding-left: 41px;
+	background-color: #ececec;
+	border-bottom: 4px groove #cfcfcf;
+}
+
+/*
+	
+	Tableless Forms - Game Area - Results - Right Awnser - PlayArea.html
+
+*/
+
+div.divGameAreaRightAwnserFooter {
+}
+
+div.divGameAreaRightAwnserLeft {
+	padding-right: 35px;
+	width: 228px;
+}
+
+div.divGameAreaRightAwnserRight {
+	font-size: 30px;
+	text-align: left;
+	width: 610px;
+}
+
+/*
+	
+	Tableless Forms - Game Results - Admin - Report - Admin.html
+
+*/
+
+div#divAdminReportContainer {
+}
+
+div#divAdminReportContainer input[type=radio] {
+	border: 0;
+	width: 40px;
+	height: 40px;
+}
+
+div#divAdminReportFooter {
+	padding-top: 15px;
+	margin: 12px 0;
+	text-align: center;
+}
+
+div#divAdminReportLeft {
+	margin-left: 25px;
+	width: 300px;
+}
+
+div#divAdminReportRight {
+	margin-right: 25px;
+	width: 327px;
+}
+
+/*
+	
+	Tableless Forms - Lightbox - Title
+
+*/
+
+div.divLightboxTitleContainer {
+	background: no-repeat url('../img/BGLightboxTitle@2x.png');
+	width: 1080px;
+	height: 88px;
+}
+
+div.divLightboxTitleFooter {
+}
+
+div.divLightboxTitleLeft {
+	font-size: 40px;
+    padding: 18px 28px 0;
+	color: #FFF;
+	width: 80%;
+}
+
+div.divLightboxTitleRight {
+	padding: 12px 17px 0 0;
+}
+
+/*
+
+	The Area for Section that hidden from the User
+
+*/
+
+#divGameComments {
+	z-index: 1003;
+}
+
+#divCommentGrayBG {
+	z-index: 1002;
+}
+
+.divJustHidden {
+	display: none;
+}
+
+div.divBasicMessage {
+	padding: 4px;
+	line-height: 19px;
+	text-align: center;
+	color: #FF0000;
+	display: none;
+}
+
+div.divBasicHidden {
+	padding: 4px 10px 4px 0;
+	display: none;
+	position: absolute;
+	z-index: 1001;
+}
+
+.divBasicHiddlenBackground {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	background-color: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	z-index: 1000;
+	display: none;
+}
+
+.divHiddlenBody {
+    padding: 5px 3px;
+    text-align: left;
+	text-transform: none;
+}
+
+.boardBox {
+	padding: 4px;
+	border: 2px solid #000000;
+}
+
+.divClose {
+    width: 121px;
+	position: absolute;
+}
+
+.divStartUpLightbox {
+	margin: 330px 0 0 687px;
+}
+
+/*
+
+	Game Results
+	
+*/
+
+#divAdminReportBack {
+	margin: 24px 0 0 18px;
+	text-align: left;
+}
+
+.aAdminReport {
+	color: #FFF;
+}
+
+/*
+
+	Authorize User
+
+*/
+
+#divLoadingBody {
+	background: no-repeat url("../img/BGLoadingPage@2x.png");
+	width: 2049px;
+	height: 1536px;
+}
+
+#divAdminLoginBody {
+	background-color: #000;
+	width: 677px;
+	padding: 21px 0;
+	border: 7px groove #b9b9b9;
+	border-radius: 15px;
+	box-shadow: 4px 1px 10px 6px #000;
+	color: #FFF;
+	font-size: 40px;
+	text-align: center;
+}
+
+#divAdminLoginHeader {
+	font-size: 45.5px;
+	border-bottom: 4px groove #969696;
+	padding-bottom: 17px;
+	margin-bottom: 31px;
+}
+
+#divAdminLoginBodyText {
+	margin: 0 0 21px;
+	border-bottom: 4px groove #969696;
+	padding-bottom: 27px;
+}
+
+#divAdminLoginBodyMessage {
+	margin: 21px 0;
+}
+
+#divAdminLoginBodyText input {
+	border: 0;
+	width: 464px;
+	height: 63px;
+	font-size: 34px;
+}
+
+#divAdminLoginBodyTextClearContainer {
+	background-color: #FFF;
+	border: 2px solid #B7B9BD;
+    border-radius: 15px;
+	margin: 0 71px;
+}
+
+#divAdminLoginBodyTextClearLeft {
+	text-align: right;
+	width: 487px;
+}
+
+#divAdminLoginBodyTextClearRight {
+	padding-top: 18px;
+	height: 57px;
+}
+
+#divAdminLoginBodyFooter {
+}
+
+/*
+	
+	Game Sign Up
+
+*/
+
+#divSignUpBody {
+	background: no-repeat url("../img/BGWood@2x.png");
+}
+
+#divSignUpBodyFR {
+	background: no-repeat url("../img/FR/BGWood-FR@2x.png");
+}
+
+#divTrashIcons {
+	padding: 80px 0 0 19px;
+	position: absolute;
+	z-index: 1;
+}
+
+#divNameOfGame {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-family: Impact;
+	font-size: 199.7px;
+}
+
+#divRecyclingIcons {
+}
+
+#lblSignUpIntroText {
+	font-size: 50px;
+}
+
+#lblSignUpIntroTextFR {
+	font-size: 40px;
+	line-height: 50px;
+}
+
+#divForumOrg {
+	border-top: 2px solid #cacaca;
+	border-bottom: 2px solid #cacaca;
+}
+
+#divForumEmail {
+}
+
+#divTermsPrivacy {
+	margin: 261px 0 0 511px;
+}
+
+#divTermsPrivacyBody {
+	background-color: #FFF;
+	width: 1017px;
+	padding: 21px 44px 86px 17px;
+	border: 1px solid #fff;
+	border-radius: 0 0 15px 15px;
+}
+
+#divFooterLanguage {
+	font-size: 45px;
+	margin: 1375px 0 0 416px;
+	text-align: right;
+	width: 75%;
+	position: absolute;
+	z-index: 2;
+}
+
+.divSignUpBody {
+	width: 2049px;
+	height: 1536px;
+}
+
+.lblSignUpIntroText {
+	line-height: 75px;
+}
+
+.lblFooterLanguage {
+	margin-left: 30px;
+}
+
+.aFooterLanguage {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+/*
+
+	Game Level
+	
+*/
+
+#imgGameBG {
+	position: absolute;
+	z-index: 1;
+}
+
+#divGameBody {
+	position: absolute;
+	z-index: 10;
+}
+
+#divDidYouKnow {
+	margin: 61px 0 0 80px;
+	width: 799px;
+	padding: 0;
+	z-index: 998;
+}
+
+#divDidYouKnowBody {
+	background-color: #FFF;
+	margin-top: 31px;
+	padding: 0;
+	border: 1px solid #060606;
+	box-shadow: 4px 1px 10px 6px #999999;
+	border-radius: 15px;
+}
+
+#divDidYouKnowInnerBody {
+	border: 1px solid #d3d3d3;
+	background-color: #e0e0e0;
+	padding: 117px 45px 35px 38px;
+	margin: 10px;
+}
+
+#lblDidYouKnowInner {
+	font-size: 32px;
+}
+
+#divGameAwnser {
+	margin: 525px 0 0 1290px;
+	width: 717px;
+	padding: 0;
+	z-index: 997;
+}
+
+#divGameAwnserBody {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 146px 45px 35px 38px;
+	box-shadow: 3px -2px 10px 0 #656054;
+	min-height: 200px;
+}
+
+#lblGameAwnser {
+	color: #FFF;
+	font-size: 32px;
+}
+
+#divPlayNow, #divLoadingScreen, #divResultsLoadingScreen {
+	margin: 242px 0 0 330px;
+}
+
+#divPlayNow, #divGameResultsBody, #divGameCommentsBody, #divLoadingScreen, #divResultsLoadingScreen {
+	width: 1463px;
+	border: 1px solid #060606;
+	box-shadow: 4px 1px 10px 6px #999999;
+	padding: 0;
+}
+
+#divGameAreaPlayNowBody, .divLoadingScreenBody {
+	padding: 0;
+}
+
+#divGameResults {
+	margin: 21px 0 0 156px;
+}
+
+#divGameComments {
+	margin: 71px 0 0 156px;
+}
+
+#divGameResultsBody {
+	padding: 0;
+	margin-top: 31px;
+	width: 1733px;
+}
+
+#divGameResultsFooter {
+	padding: 47px 312px 0;
+	text-align: center;
+}
+
+#divGameCommentsBody {
+	padding: 0;
+	margin-top: 31px;
+	width: 1733px;
+}
+
+#divGameCommentsInnerBody {
+	background-color: #ddd;
+	text-align: center;
+	font-size: 40px;
+	padding: 72px 48px 71px 111px;
+}
+
+#divGameCommentsFooter {
+	padding: 47px 312px 0;
+	text-align: right;
+	width: 988px;
+}
+
+#divGameNextStage {
+	margin: 71px 0 0 880px;
+	background-color: #FFF;
+	padding: 0;
+	border: 1px solid #060606;
+	box-shadow: 4px 1px 10px 6px #999999;
+	/*border-radius: 15px;*/
+}
+
+#divGameNextStageInnerBody {
+	border: 1px solid #d3d3d3;
+	background-color: #e0e0e0;
+	padding: 64px 0;
+    text-align: center;
+    width: 320px;
+	margin: 6px;
+}
+
+#spanGameNextStage {
+	font-size: 45px;
+}
+
+.lblGameAreaResultScore {
+	font-size: 50px;
+}
+
+#txtGameComments {
+	border: 0;
+	width: 1024px;
+	height: 512px;
+	font-size: 34px;
+}
+
+div#divDidYouKnowClose {
+	width: 836px;
+}
+
+.divDidYouKnowTitle {
+	margin-top: 30px;
+	position: absolute;
+	text-align: left;
+}
+
+.divLoadingScreenBody {
+	background-color: #E1E1E1;
+    padding: 72px 71px 59px 70px;
+    text-align: center;
+	font-size: 40px;
+}
+
+.divTriangleBottom {
+	width: 0; 
+	height: 0; 
+	border-right: 85px solid transparent;
+	border-left: 85px solid transparent; 
+	border-top: 85px solid rgba(0, 0, 0, 0.7);
+	position: relative;
+	margin-left: 530px;
+}
+
+.divGameAreaPlayNowTitle {
+	margin-bottom: 35px;
+	padding: 0 0 35px;
+	border-bottom: 4px groove #cfcfcf;
+}
+
+.lblGameIntroTitle {
+	font-size: 50px;
+	text-transform: uppercase;
+	color: 6a6c6c;
+}
+
+.divGameScoreTitle {
+	font-size: 41.58px;
+	text-transform: uppercase;
+	margin: 0 0 21px;
+}
+
+.divGameScore {
+	font-size: 58.42px;
+}
+
+.divGameAreaResultsClose {
+	width: 1773px;
+	position: absolute;
+	text-align: right;
+}
+
+div.divGameItemScoreActive {
+	background-color: #FFF;
+}
+
+div.divGameAreaPlayNowRecycling {
+	width: 434px;
+}
+
+div.divGameAreaPlayNowRecyclingIcon {
+	padding: 26px 0 31px;
+}
+
+div.divGameAreaPlayNowRecyclingTitle {
+	font-family: Impact;
+	font-size: 55.5px;
+	text-transform: uppercase;
+	padding-bottom: 34px;
+}
+
+div.divGameAreaPlayNowRecyclingText {
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+
+div.divGameAreaaResultsRecyclingIcon {
+	padding: 62px 0 18px;
+}
+
+div.divGameAreaResultsRecyclingTitle {
+	font-size: 43.34px;
+}
+
+div.divGameAreaResultsCenterWrongAnwserCentent {
+	padding: 62px 0 0;
+}
+
+/*
+	
+	Drag and Drop
+	
+*/
+              
+.drag {
+}
+
+.drop {
+}
+
+.aBrightIdea {
+    color: rgb(18, 150, 110);
+    font: 20px;
+    font-weight: bold;
+}

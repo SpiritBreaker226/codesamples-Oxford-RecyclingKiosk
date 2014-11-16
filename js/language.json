@@ -1,0 +1,187 @@
+{
+	"en_ca": {
+		"LangName": "English",
+		"Sign Up":
+		{
+			"divSignUpBody": "divSignUpBody",
+
+			"lblGameIntroTitle": "Starting Game...",
+
+			"lblTermsPrivacyTitle": "Terms &amp; Conditions / Privacy Statement",
+			"lblTermsPrivacySubTitle": "Terms &amp; Conditions:",
+			"lblTermsBody": "By playing this game you agree to the terms and conditions set forth here. This game is for the purpose of education for any tenant that wishes to participate. All winners of the game and the designated grand prize will be announced via email. The results of the game and additional information regarding your building’s recycling program will be shared as well.",
+			"lblPrivacy": "Privacy Statement:",
+			"lblPrivacyBody1": "Oxford protects your personal information and honours and respects your privacy. All personal information disclosed in this game will be kept confidential and will only be used for the purposes of this campaign. Oxford is responsible for protecting your information in our possession or custody.",
+			"lblPrivacyBody2": "Canadian privacy laws define \"personal information\" broadly as information about an identifiable individual or information that allows an individual to be identified, including a person’s name, address, telephone number, birth date, income, license plate number and credit history among others. In general, “personal information” does not include business contact information: your title or business address, telephone or facsimile number or e-mail address.",
+			"imgDone": "img/ButtonDoneOff@2x.png",
+			
+			"lblNameOfGame": "Oxford Recycles",
+			
+			"txtFirstName": "First Name",
+			"txtLastName": "Last Name",
+			"txtOrg": "Organization",
+			"txtEmail": "Email",
+			"imgStart": "img/ButtonStartOff@2x.png",
+
+			"lblSignUpIntroText": "Learn the nitty-gritty about your building’s recycling program and help divert as much waste as you can from going to landfill.",
+			"lblKeepMe": "Keep me up to date with Oxford Properties Group Green Team Campaigns",
+
+			"lblPlayingGameAgree": "By playing the game, you agree to the",
+			"aTermLightboxSwitch": "Terms &amp; Conditions",
+			"aPrivacyLightboxSwitch": "Privacy Statement",
+			"lblAndText": "and"
+		},
+		"Play Area":
+		{
+			"imgDidYouKnow": "img/PopUpDidYouKnow@2x.png",
+			"Stage Fact 1": "Recycling programs vary across the city. Be mindful of the items that are accepted in your curbside recycling program and those that are accepted at your place of work.",
+			"Stage Fact 2": "1 million paper coffee cups are destined for the landfill each day in {0}. Reduce paper use while still enjoying the java you love by opting for a reusable alternative instead.",
+			"Stage Fact 3": "The average office worker generates approximately 2 lbs of paper and paperboard products every day.",
+			"spanGameNextStage": "Next Stage",
+			"divGameAreaRight": [
+				"divGameAreaRightThreeRecycling",
+				"divGameAreaRightTwoRecycling",
+				"divGameAreaRightTwoRecyclingWithBattery",
+				"divGameAreaRightTwoRecyclingWithOrangeOtherRecycling",
+				"divGameAreaRightTwoRecyclingWithOtherRecycling",
+				"divGameAreaRightThreeRecyclingWithOtherRecycling"
+			],
+
+			"lblLoadingStage": "Loading Stage...",
+			"lblGettingResults": "Getting Results...",
+			
+			"lblGameInstaurationsTitle": "Put Your Recycling Knowledge To The Test!",
+			"lblGameInstaurationsIntro": "Pick up the waste items scattered throughout your building and place them in the correct bin. Score points for every correct answer!",
+			"lblGIGarbage": "Garbage",
+			"lblGIGarbageExample": "Examples: styrofoam, wrappers, plastic cutlery",
+			"lblGIRecyclables": "Recyclables",
+			"lblGIRecyclablesExample": "Examples: paper bags, newspaper, cardboard",
+			"lblGIOrganics": "Organics",
+			"lblGIOrganicsExample": "Examples: tea bags, food, coffee filters",
+			"lblGIOther": "Other",
+			"imgPlayNow": "img/ButtonPlayOff@2x.png",
+			
+			"lblGameResultsTitle": "Thank You For Playing!",
+			"lblGameAreaResultScore": "Your Score:",
+			"lblGameResultsIntroText": "You diverted 0% of valuable resources from the landfill. You could use some practice. Refer to the signage on the bins to help you determine where the items go.",
+			"aGameResultsSubmitIdea": "Click to submit your waste reduction bright idea.",
+			"imgGameResultsItem": "img/GameAreaWrongAwnserItem@2x.png",
+			"imgGameResultsYouSaid": "img/GameAreaWrongAwnserYouSaid@2x.png",
+			"imgGameResultsCurrentAnswer": "img/GameAreaWrongAwnserCurrent@2x.png",
+			"lblGameResultsFooter": "You are now eligible to win some great prizes.",
+
+			"lblGameCommentsTitle": "Share Any Ideas",
+			"lblGameCommentsSubTitle": "Thank You for your input",
+			"lblGameCommentsBody1": "What do you think about recycling and waste reduction at our building? Tell us your bright idea for a chance to win!",
+			"lblGameCommentsBody2": "Thank you for participating. Together, we can make a difference.",
+			"aAddComment": "Add Comment",
+
+			"lblGameScoreTitle": "Score",
+			"lblGameScoreStageTitle": "Stage"
+		},
+		"Main JS":
+		{
+			"strGameResultsIntroText": "Great work! You diverted {0}% of valuable resources from going to landfill.",
+			"strEmailAddressErrorValid": "The email address is not valid.",
+			"strEmailAddressErrorillegalChar": "The email address contains illegal characters.",
+			"strGameCommentErrorMessage": "You need to enter a comment",
+			"strGameResultsViewResults": "View Results",
+			"strGameAwnserCorrect": "img/PopUpCorrect@2x.png",
+			"strGameAwnserIncorrect": "img/PopUpIncorrect@2x.png"
+		}
+	},
+	"fr_ca": {
+		"LangName": "Français",
+		"Sign Up":
+		{
+			"divSignUpBody": "divSignUpBodyFR",
+
+			"lblGameIntroTitle": "Début...",
+
+			"lblTermsPrivacyTitle": "Modalités / Fait",
+			"lblTermsPrivacySubTitle": "Modalités:",
+			"lblTermsBody": "La législation canadienne en matière de protection de la vie privée définit à grands traits les «renseignements personnels» comme étant des renseignements sur une personne identifiable ou des renseignements qui permettent l’identification d’une personne comme, par exemple, son nom, son adresse, son numéro de téléphone, sa date de naissance, son revenu, le numéro de plaque d’immatriculation de son véhicule et ses antécédents de crédit. Règle générale, les «renseignements personnels» ne comprennent pas les renseignements de nature professionnelle tels que le titre de fonction, l’adresse du lieu de travail, les numéros de téléphone ou de télécopieur ni l’adresse électronique au travail.",
+			"lblPrivacy": "Fait:",
+			"lblPrivacyBody1": "En acceptant de jouer à ce jeu, vous acceptez les modalités énoncées aux présentes. Ce jeu éducatif est destiné aux locataires qui souhaitent y participer. Les noms des gagnants ainsi que le premier prix seront communiqués par courrier électronique. Les résultats du jeu ainsi que des renseignements additionnels sur le programme de recyclage de votre immeuble seront également publiés.",
+			"lblPrivacyBody2": "Protection des renseignements personnels\nOxford protège vos renseignements personnels et respecte votre vie privée. Tous les renseignements personnels communiqués dans le cadre du jeu seront strictement confidentiels et ne seront utilisés qu’aux fins de la présente campagne. Oxford est responsable de la protection de vos renseignements qui se trouvent en sa possession ou dans ses dossiers.",
+			"imgDone": "img/FR/ButtonDoneOff-FR@2x.png",
+			
+			"lblNameOfGame": "Oxford Recycle",
+			
+			"txtFirstName": "Prénom",
+			"txtLastName": "Nom",
+			"txtOrg": "Entreprise",
+			"txtEmail": "Courrier électronique",
+			"imgStart": "img/FR/ButtonStartOff-FR@2x.png",
+
+			"lblSignUpIntroText": [
+				"Renseignez-vous sur les détails du programme de recyclage de votre immeuble tout en contribuant à détourner le plus de déchets possible des sites d’enfouissement.",
+				"lblSignUpIntroTextFR"
+			],
+			"lblKeepMe": "Tenez-moi au courant des prochaines campagnes vertes du comité vert du Groupe immobilier Oxford",
+
+			"lblPlayingGameAgree": "En acceptant de jouer vous acceptez",
+			"aTermLightboxSwitch": "les modalités relatives",
+			"aPrivacyLightboxSwitch": "la protection des renseignements personnels",
+			"lblAndText": "à"
+		},
+		"Play Area":
+		{
+			"imgDidYouKnow": "img/FR/PopUpDidYouKnow-FR@2x.png",
+			"Stage Fact 1": "Les programmes de recyclage varient d’une ville à l’autre. Gardez à l’esprit que certains articles sont acceptés dans le cadre des programmes de recyclage municipaux et que d’autres le sont dans le cadre du programme en vigueur à votre lieu de travail.",
+			"Stage Fact 2": "Près de 1 million de gobelets à café sont destinés aux sites d’enfouissement {0} tous les jours. Réduisez l’utilisation de papier et de plastique tout en continuant de savourer votre café…dans un contenant réutilisable.",
+			"Stage Fact 3": "L'employé de bureau moyen génère quelque 2 livres de produits en papier et en carton tous les jours.",
+			"spanGameNextStage": "Étape Suivante",
+			"divGameAreaRight": [
+				"divGameAreaRightThreeRecyclingFR",
+				"divGameAreaRightTwoRecyclingFR",
+				"divGameAreaRightTwoRecyclingWithBatteryFR",
+				"divGameAreaRightTwoRecyclingWithOrangeOtherRecyclingFR",
+				"divGameAreaRightTwoRecyclingWithOtherRecyclingFR",
+				"divGameAreaRightThreeRecyclingWithOtherRecyclingFR"
+			],
+
+			"lblLoadingStage": "étape de chargement...",
+			"lblGettingResults": "Obtenir des résultats...",
+			
+			"lblGameInstaurationsTitle": "METTEZ À L’ÉPREUVE VOS CONNAISSANCES EN MATIÈRE DE RECYCLAGE !",
+			"lblGameInstaurationsIntro": "Ramassez les déchets éparpillés à l’intérieur de l’immeuble et déposez-les dans les bacs appropriés. Chaque bonne réponse vous donnera des points !",
+			"lblGIGarbage": "DÉCHETS",
+			"lblGIGarbageExample": "Exemples : styromousse, emballages, couteaux, fourchettes, cuillers de plastique.",
+			"lblGIRecyclables": "RECYCLAGE",
+			"lblGIRecyclablesExample": "Exemples : sacs de papier, journaux, carton.",
+			"lblGIOrganics": "ORGANICSs",
+			"lblGIOrganicsExample": "Exemples : les sachets de thé, de la nourriture, filtres à café",
+			"lblGIOther": "AUTRE",
+			"imgPlayNow": "img/FR/ButtonPlayOff-FR@2x.png",
+			
+			"lblGameResultsTitle": "Merci d'avoir jouer!",
+			"lblGameAreaResultScore": "Votre pointage:",
+			"lblGameResultsIntroText": "Vous avez détourné 0% de ressources précieuses des sites d'enfouissement. Un peu de pratique ne ferait pas de tort. Veuillez vous reporter à la signalisation sur les bacs pour vous aider à déterminer où les articles vont.",
+			"aGameResultsSubmitIdea": "Cliquez ici pour nous soumettre vos brillantes idées en matière de réduction des déchets.",
+			"imgGameResultsItem": "img/FR/GameAreaWrongAwnserItem-FR@2x.png",
+			"imgGameResultsYouSaid": "img/FR/GameAreaWrongAwnserYouSaid-FR@2x.png",
+			"imgGameResultsCurrentAnswer": "img/FR/GameAreaWrongAwnserCurrent-FR@2x.png",
+			"lblGameResultsFooter": "Vous courez maintenant la chance de gagner un superbe prix. Attention à la nouvelle signalisation de recyclage qui sera bientôt installée dans votre immeuble !",
+
+			"lblGameCommentsTitle": "PARTAGEZ VOS IDÉES",
+			"lblGameCommentsSubTitle": "MERCI POUR VOTRE IDÉE",
+			"lblGameCommentsBody1": "Que pensez-vous du programme de recyclage de votre bâtiment ? Partagez vos idées pour une chance de gagner!",
+			"lblGameCommentsBody2": "Merci d’avoir participé. Ensemble, nous pouvons faire une différence.",
+			"aAddComment": "Ajouter un commentaire",
+
+			"lblGameScoreTitle": "Pointage",
+			"lblGameScoreStageTitle": "Étape"
+		},
+		"Main JS":
+		{
+			"strGameResultsIntroText": "Excellent travail ! Vous avez détourné {0}% de ressources précieuses des sites d’enfouissement.",
+			"strEmailAddressErrorValid": "L'adresse courriel n'est pas valide.",
+			"strEmailAddressErrorillegalChar": "L'adresse e-mail contient des caractères illégaux.",
+			"strGameCommentErrorMessage": "Vous devez entrer un commentaire",
+			"strGameResultsViewResults": "Voir les résultats",
+			"strGameAwnserCorrect": "img/FR/PopUpCorrect-FR@2x.png",
+			"strGameAwnserIncorrect": "img/FR/PopUpIncorrect-FR@2x.png"
+		}
+	}
+}

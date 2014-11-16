@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html><html><!-- InstanceBegin template="/Templates/BasicTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-lightness.css" />
+        <link rel="stylesheet" type="text/css" href="css/mainCSS.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        
+    	<!-- InstanceBeginEditable name="doctitle" -->
+    	    <title>Recycling Kiosk - Login</title>
+        <!-- InstanceEndEditable -->
+        
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/phonegap.js"></script>
+		<script type="text/javascript" src="js/MainJS.js"></script> 
+        <script type="text/javascript" src="js/DAL.js"></script>
+        <script type="text/javascript" src="js/PhonegapJqueryStart.js"></script>
+    </head>
+    <body onLoad="onLoad()">
+    	<div id="divGrayBG" class="divBasicHiddlenBackground"></div>
+        <div id="divLoadingGrayBG" class="divBasicHiddlenBackground"></div>
+                
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+        
+        <!-- InstanceBeginEditable name="BasicBody" -->
+		<div id="divLoadingBody">
+        	<div class='divBasicHidden divStartUpLightbox' id='divAdminLogin'>
+                <div class="divHiddlenBody" id="divAdminLoginBody">
+                    <div id="divAdminLoginHeader">
+                        <label class="lblAvenirLTStdHeavy">Admin Login</label>
+                    </div>
+                    <label id="lblAdminLoginTitle">Please enter building id</label>
+                    
+                    <div id="divAdminLoginBodyMessage">
+                    	<div id="divMessage" class="divBasicMessage"></div>
+                    </div>
+                    <div id="divAdminLoginBodyContent">
+                        <div id="divAdminLoginBodyText">                    
+                            <div class="divSignUpForumTextClearContainer customContainer" id="divAdminLoginBodyTextClearContainer">
+                                <div class="divSignUpForumTextClearLeft customLeft" id="divAdminLoginBodyTextClearLeft">
+                                    <input id="txtBuildingID" type="tel" onKeyPress="clearText('txtBuildingID','aBuildingIDClear','imgAdminLoginError', false);" onChange="clearText('txtBuildingID','aBuildingIDClear','imgAdminLoginError', false);" maxlength="4" />
+                                    <input id="txtAdminLogin" type="text" onKeyPress="clearText('txtAdminLogin','aAdminLoginClear','imgAdminLoginError', false);" onChange="clearText('txtAdminLogin','aAdminLoginClear','imgAdminLoginError', false);" maxlength="249" class="divJustHidden" />
+                                </div>
+                                <div class="divSignUpForumTextClearRight customRight" id="divAdminLoginBodyTextClearRight">
+                                    <a href="javascript:void(0);" id="aBuildingIDClear" class="divJustHidden" onClick="clearText('txtBuildingID','aBuildingIDClear','imgAdminLoginError', true);"><img alt="Clear" src="img/ButtonClear@2x.png" /></a>
+                                    <a href="javascript:void(0);" id="aAdminLoginClear" class="divJustHidden" onClick="clearText('txtAdminLogin','aAdminLoginClear','imgAdminLoginError', true);"><img alt="Clear" src="img/ButtonClear@2x.png" /></a>
+                                    <img alt="Error" src="img/ErrorMark@2x.png" class="divJustHidden" id="imgAdminLoginError" />
+                                    &nbsp;
+                                </div>
+                                <div class="divSignUpForumTextClearFooter customFooter"></div>
+                            </div>
+                        </div>
+                        <div id="divAdminLoginBodyFooter">
+                            <a href="javascript:void(0);" onClick="sendLogin('divMessage', getDocID('txtBuildingID'), getDocID('txtAdminLogin'), getDocID('aBuildingIDClear'), getDocID('aAdminLoginClear'), getDocID('imgAdminLoginError'), getDocID('lblAdminLoginTitle'), getDocID('divAdminLoginBodyContent'));"><img id="imgDone" alt="Done" src="img/ButtonDoneOff@2x.png" onMouseOver="changeImage('imgDone','img/ButtonDoneOn@2x.png');" onMouseOut="changeImage('imgDone','img/ButtonDoneOff@2x.png');" /></a>
+                        </div>
+					</div>
+                </div>
+            </div>
+        </div>
+        DB Version<label id="lblDBVersion"></label>
+		<!-- InstanceEndEditable --> 
+		
+		<!-- InstanceBeginEditable name="BasicFooter" -->
+		<script type="text/javascript">
+            function onLoad() 
+            {
+                console.log("On Page Load");
+            
+                //starts both the Phonegap and JQuery Frameworks
+                app.initialize(function() {
+                    //creates the local database if there is no database on the device if there is one 
+                    //then is will just open it 
+                    startDB("RKDB", "Recycling Kiosk", 2);
+                });
+            
+                console.log("Device is Ready");
+            }//end of onLoad()
+        </script>
+        <!-- InstanceEndEditable -->
+    </body>
+<!-- InstanceEnd --></html>
+
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
